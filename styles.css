@@ -1,0 +1,141 @@
+:root {
+  --pri-red: hsl(0, 100%, 74%);
+  --pri-green: hsl(154, 59%, 51%);
+  --accent-color: hsl(248, 32%, 49%);
+  --neutral-dark: hsl(249, 10%, 26%);
+  --neutral-grey: hsl(246, 25%, 77%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+body {
+  background-image: url("assets/images/bg-intro-desktop.png");
+  background-color: var(--pri-red);
+}
+main {
+  font-size: 1rem;
+  display: flex;
+  padding: 5% 8%;
+  align-items: center;
+  color: white;
+}
+br {
+  display: none;
+}
+.side,
+.form_group,
+form {
+  display: flex;
+  flex-direction: column;
+}
+.form_group {
+  width: 100%;
+  padding: 4%;
+}
+.side {
+  padding: 4%;
+  color: white;
+}
+form {
+  color: white;
+  gap: 1.5rem;
+  margin-top: 5%;
+  background-color: white;
+  padding: 5%;
+  border-radius: 10px;
+  border: 1px solid var(--neutral-grey);
+}
+
+form > button {
+  padding: 30px 0 15px 0;
+  background-color: var(--pri-green);
+  color: white;
+  font-size: 1.5rem;
+  outline: none;
+  border: 1px solid var(--neutral-dark);
+  cursor: pointer;
+}
+form > button:hover {
+  box-shadow: inset 0 0 100px rgba(255, 255, 255, 0.5);
+}
+form p {
+  color: var(--neutral-grey);
+  text-align: center;
+}
+
+form > input {
+  padding: 30px 35px 15px 35px;
+  color: var(--neutral-dark);
+  font-size: 1.5rem;
+  caret-color: var(--neutral-dark);
+  border: 1px solid var(--neutral-grey);
+}
+form > input:focus {
+  border: 1px solid var(--neutral-dark);
+  outline: none;
+}
+
+.bold_it {
+  font-weight: bolder;
+}
+.b_light {
+  text-align: center;
+  padding: 30px 0;
+  background-color: var(--accent-color);
+  border: none;
+  box-shadow: 0 5px 10px 5px var(--neutral-dark);
+}
+.b_light,
+form > input,
+form > button {
+  border-radius: 10px;
+}
+.b_light span {
+  font-size: 1.5rem;
+}
+.side > h2 {
+  font-size: 3rem;
+  margin-bottom: 5%;
+}
+.side > p {
+  font-size: 1.5rem;
+}
+a,
+a:link {
+  color: var(--pri-red);
+  text-decoration: none;
+}
+footer {
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+}
+a.profile {
+  font-size: 1.5rem;
+  color: var(--accent-color);
+}
+@media (max-width: 700px) {
+  main {
+    padding: 0;
+    width: 100%;
+    flex-direction: column;
+    background-image: url("assets/images/bg-intro-mobile.png");
+    text-align: center;
+    margin-top: 30px;
+  }
+  br {
+    display: block;
+  }
+  .side > p,
+  form > button,
+  form > input,
+  .b_light span {
+    font-size: 1rem;
+  }
+  .side > h2 {
+    font-size: 2rem;
+  }
+}
