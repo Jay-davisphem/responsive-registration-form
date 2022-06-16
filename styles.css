@@ -1,3 +1,5 @@
+url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 :root {
   --pri-red: hsl(0, 100%, 74%);
   --pri-green: hsl(154, 59%, 51%);
@@ -12,6 +14,7 @@
   font-size: 18px;
 }
 body {
+  font-family: 'Poppins', sans-serif;
   background-image: url("assets/images/bg-intro-desktop.png");
   background-color: var(--pri-red);
 }
